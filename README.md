@@ -90,7 +90,7 @@ npm run build
 
 Same as the build task plus the possibility to sync your theme folder with another folder in a different server or VM. You need to specify a correct destination and SSH port in the `.npmrc` file: `ALEPH_SYNCDEST` and `ALEPH_SSHPORT`.
 
-Just run this command in the terminal:
+Run this command in the terminal:
 
 ```bash
 npm run build-sync
@@ -100,7 +100,7 @@ npm run build-sync
 
 Same as the build task plus the possibility to sync your site across multiple devices with Browsersync. You need to specify a correct proxy URL in the `.npmrc` file: `ALEPH_URL`.
 
-Just run this command in the terminal:
+Run this command in the terminal:
 
 ```bash
 npm run build-server
@@ -109,6 +109,12 @@ npm run build-server
 ### build-sync-server
 
 All the previous three tasks together.
+
+Run this command in the terminal:
+
+```bash
+npm run build-sync-server
+```
 
 ### zip
 
