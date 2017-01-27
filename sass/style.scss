@@ -1,0 +1,104 @@
+/*!
+Theme Name: Aleph
+Theme URI: https://github.com/benitolopez/aleph
+Author: Benito Lopez
+Author URI: http://lopezb.com/
+Description: Opinionated WordPress starter theme.
+Version: 1.0.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Text Domain: aleph
+Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+*/
+
+//  FRAMEWORK
+//  Settings ........... Variables and settings.
+//  Mixins ............. Default mixins
+//  Sass MQ ............ Media Queries with superpowers (https://github.com/sass-mq/sass-mq).
+
+/*
+NORMALIZE
+	Box-sizing ......... Better `box-sizing`.
+	Normalize.css ...... Nicolas Gallagher and Jonathan Neal normalize.css.
+	Reset .............. Complement normalize.css.
+
+ELEMENTS
+	Page ............... Document’s styles.
+	Headings ........... Headings styles.
+	Copy ............... Base typography styles.
+	Images ............. Image styles.
+	Tables ............. Table styles.
+	Buttons ............ Button styles.
+	Fields ............. Form field styles.
+	Lists .............. List styles.
+	Media .............. Media styles.
+	Galleries .......... Native WordPress gallery styles.
+	Pagination ......... WordPress pagination styles.
+
+SHARED
+	Alignments ......... WP alignment classes.
+	Accessibility ...... Accessibility rules.
+	Clearings .......... Clearing floats.
+
+LAYOUT
+	Wrapper ............ Page constraint.
+	Layout ............. Page layout.
+	Content ............ Content styles.
+	Sidebar ............ Sidebar styles.
+
+SITE
+	Navigation ......... Main menu styles.
+	Header ............. Site header styles.
+	Footer ............. Site footer styles.
+	Posts & Pages ...... Post and page related styles.
+	Comments ........... Post and page comments.
+	Widgets ............ Widgets styles.
+*/
+
+// FRAMEWORK
+@import "framework/settings";
+@import "framework/mixins";
+@import "node_modules/sass-mq/mq";
+
+// NORMALIZE
+@import "normalize/box-sizing";
+@import "normalize/normalize";
+@import "normalize/reset";
+
+// ELEMENTS
+@import "elements/page";
+@import "elements/headings";
+@import "elements/copy";
+@import "elements/images";
+@import "elements/tables";
+@import "elements/buttons";
+@import "elements/fields";
+@import "elements/lists";
+@import "elements/media";
+@import "elements/galleries";
+@import "elements/pagination";
+
+// UTILITIES
+@import "shared/alignments";
+@import "shared/accessibility";
+@import "shared/clearings";
+
+// LAYOUT
+@import "layout/wrapper";
+@import "layout/layout";
+@import "layout/content";
+@import "layout/sidebar";
+
+// SITE
+@import "site/navigation";
+@import "site/header";
+@import "site/footer";
+@import "site/posts-and-pages";
+@import "site/comments";
+@import "site/widgets";

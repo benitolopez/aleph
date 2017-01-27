@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+>>> FIELDS
+----------------------------------------------------------------
+*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	@include font-size(16px);
+	@include transition;
+	border: 1px solid $color__border__input;
+	color: $color__text__input;
+	padding: $space__xs $space;
+
+	&:focus {
+		border-color: $color__border__input__focus;
+		color: $color__text__input__focus;
+		outline: none;
+	}
+}
+
+textarea {
+	width: 100%;
+}
+
+select {
+	border: 1px solid $color__text__input__focus;
+}
+
+fieldset {
+	margin-bottom: $space;
+}

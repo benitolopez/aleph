@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+>>> COMMMENTS
+----------------------------------------------------------------
+*/
+
+.comment-navigation__list {
+	@include clear-list();
+}
+
+.comment__list {
+	@include clear-list();
+
+	.children {
+		list-style: none;
+	}
+}
+
+.comment__content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}

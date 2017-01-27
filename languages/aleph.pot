@@ -1,0 +1,202 @@
+# Copyright (C) 2017 Aleph
+# This file is distributed under the same license as the Aleph package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Aleph\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Report-Msgid-Bugs-To: https://github.com/benitolopez/aleph\n"
+"Language-Team: Benito Lopez <hello@lopezb.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:20
+msgid "It looks like nothing was found at this location. Perhaps searching can help."
+msgstr ""
+
+#: ../comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:40, ../comments.php:65
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:43, ../comments.php:68
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:47, ../comments.php:72
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:85
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../footer.php:18
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../footer.php:20
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../functions.php:46
+msgid "Primary"
+msgstr ""
+
+#: ../functions.php:90, ../inc/customizer.php:50
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:92
+msgid "Add widgets here."
+msgstr ""
+
+#: ../header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:57
+msgid "Site navigation"
+msgstr ""
+
+#: ../inc/class-walker-comment.php:65
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/class-walker-comment.php:65, ../inc/class-walker-comment.php:107
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: comment author link */
+#: ../inc/class-walker-comment.php:92
+msgid "%s <span class=\"says comment__says\">says:</span>"
+msgstr ""
+
+#. translators: 1: comment date, 2: comment time */
+#: ../inc/class-walker-comment.php:103
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/class-walker-comment.php:111
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/customizer.php:20
+msgid "Typography"
+msgstr ""
+
+#: ../inc/customizer.php:31
+msgid "Body Typography"
+msgstr ""
+
+#: ../inc/customizer.php:32
+msgid "Select the main typography options for your site."
+msgstr ""
+
+#: ../inc/customizer.php:58
+msgid "Site Layout"
+msgstr ""
+
+#: ../inc/customizer.php:64
+msgid "Left sidebar"
+msgstr ""
+
+#: ../inc/customizer.php:65
+msgid "Right sidebar"
+msgstr ""
+
+#: ../inc/customizer.php:66
+msgid "No sidebar"
+msgstr ""
+
+#: ../inc/include-kirki.php:54
+msgid "A plugin is required to take advantage of this theme's features in the customizer."
+msgstr ""
+
+#: ../inc/include-kirki.php:56
+msgid "Install Now"
+msgstr ""
+
+#: ../inc/include-kirki.php:59
+msgid "You have installed Kirki. Activate it to take advantage of this theme's features in the customizer."
+msgstr ""
+
+#: ../inc/include-kirki.php:61
+msgid "Activate Now"
+msgstr ""
+
+#: ../inc/template-tags.php:28
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: ../inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: ../inc/template-tags.php:52
+msgctxt "post_cats"
+msgid "Posted in"
+msgstr ""
+
+#: ../inc/template-tags.php:66
+msgctxt "post_tags"
+msgid "Tagged with"
+msgstr ""
+
+#. translators: %s: post title */
+#: ../inc/template-tags.php:80
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:155
+msgid "Posts pagination"
+msgstr ""
+
+#: ../search.php:18
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: ../template-parts/content-page.php:22, ../template-parts/content.php:36
+msgid "Pages:"
+msgstr ""
+
+#: ../template-parts/content.php:33
+msgid "Read more"
+msgstr ""

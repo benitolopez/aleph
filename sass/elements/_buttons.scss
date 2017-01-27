@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+>>> BUTTONS
+----------------------------------------------------------------
+*/
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include font-size(16px);
+	@include transition;
+	background: $background__color__btn;
+	border-radius: $radius;
+	border: none;
+	color: $color__text__btn;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font__main;
+	margin: 0;
+	padding: $space__s $space;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: $background__color__btn__hover;
+		color: $color__text__btn__hover;
+	}
+}

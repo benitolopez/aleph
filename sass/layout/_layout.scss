@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+>>> LAYOUT
+----------------------------------------------------------------
+*/
+
+$size__site__content: 70%;
+$size__site__sidebar: 30%;
+
+@include mq($from: desktop) {
+	.site-main--right-sidebar,
+	.site-main--left-sidebar {
+		width: $size__site__content;
+	}
+
+	.site-main--no-sidebar {
+		@include center-block;
+		max-width: $max__content__width;
+	}
+
+	.site-main--right-sidebar {
+		float: left;
+		padding-right: $space__xl;
+	}
+
+	.site-main--left-sidebar {
+		float: right;
+		padding-left: $space__xl;
+	}
+
+	.site-sidebar--right-sidebar,
+	.site-sidebar--left-sidebar {
+		overflow: hidden;
+		width: $size__site__sidebar;
+	}
+
+	.site-sidebar--right-sidebar {
+		float: right;
+	}
+
+	.site-sidebar--left-sidebar {
+		float: left;
+	}
+}
+
+@include mq($from: wide) {
+	.site-main--right-sidebar,
+	.site-main--left-sidebar {
+		padding-left: 0;
+		padding-right: 0;
+		width: $max__content__width;
+	}
+
+	.site-sidebar--right-sidebar,
+	.site-sidebar--left-sidebar {
+		width: ($max__site__width - $max__content__width - $space__xl);
+	}
+}

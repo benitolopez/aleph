@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+>>> SIDEBAR
+----------------------------------------------------------------
+*/
+
+.site-sidebar {
+	border-top: 1px solid $color__default__line;
+	padding-bottom: $space__xl;
+	padding-top: $space__xl;
+
+	@include mq($from: desktop) {
+		border-top: none;
+		padding-top: 0;
+	}
+}

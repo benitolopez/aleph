@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+>>> ALIGNMENTS
+----------------------------------------------------------------
+*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $space;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $space;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}

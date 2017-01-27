@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+>>> POST AND PAGES
+----------------------------------------------------------------
+*/
+
+.sticky {
+	display: block;
+}
+
+.post__item,
+.page__item {
+	margin: 0 0 $space__xl;
+}
+
+.post__time--updated {
+	display: none;
+}
+
+.page__content,
+.post__content,
+.post__summary {
+	margin-top: $space;
+}
+
+.post__thumbnail {
+	display: block;
+	margin-top: $space;
+}

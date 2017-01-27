@@ -1,0 +1,49 @@
+{
+  "name": "aleph",
+  "description": "Opinionated WordPress starter theme.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/benitolopez/aleph",
+  "author": "Benito Lopez http://lopezb.com/",
+  "scripts": {
+    "test": "xo",
+    "run:sass": "node-sass -o .tmp sass --output-style expanded",
+    "run:pot": "wp-pot --src '**/*.php' --dest-file \"languages/${npm_config_ALEPH_SLUG}.pot\" --domain \"${npm_config_ALEPH_SLUG}\" --package \"${npm_config_ALEPH_NICENAME}\" --bug-report \"${npm_config_ALEPH_POT_BUG_REPORT}\" --team \"${npm_config_ALEPH_POT_TEAM}\"",
+    "run:sync": "rsync -azP -e \"ssh -p ${npm_config_ALEPH_SSHPORT}\" --delete --exclude='sass/' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' . \"${npm_config_ALEPH_SYNCDEST}\"",
+    "run:xo": "xo --fix || true",
+    "minify:js": "rm -f assets/js/*.min.js; for f in assets/js/*.js; do short=${f%.js}; uglifyjs $f > $short.min.js; done",
+    "run:js": "npm-run-all --silent --parallel run:xo minify:js",
+    "build:pot": "onchange '**/*.php' -i -w -- npm run run:pot",
+    "build:js": "onchange 'assets/js/*.js' -e 'assets/js/*.min.js' -e 'assets/js/vendor' -i -w -- npm run run:js",
+    "build:scss": "npm run run:sass && npm run run:sass -- -w",
+    "build:css": "postcss --local-plugins -w -u css-mqpacker --css-mqpacker.sort autoprefixer -d . .tmp/style.css",
+    "sync": "onchange '**/*' -e 'dist' -e '.git' -e 'sass' -e 'languages' -e 'assets/js/*.min.js' -e '.tmp' -w -- npm run run:sync",
+    "server": "browser-sync start --proxy $npm_config_ALEPH_URL --host $npm_config_ALEPH_URL --reload-delay 1000 --files '**/*.css'",
+    "dirs": "mkdir -p .tmp; touch .tmp/style.css; mkdir -p languages; touch \"languages/${npm_config_ALEPH_SLUG}.pot\";",
+    "zip": "find . -type f ! -path './tmp/*' ! -path './node_modules/*' ! -path './.git/*' ! -path './sass/*' ! -path './package.json' ! -path './.*' | zip dist/$npm_config_ALEPH_SLUG.zip -@",
+    "build": "npm run dirs -s; npm-run-all --silent --parallel build:*",
+    "build-sync": "npm run dirs -s; npm-run-all --silent --parallel build:* sync",
+    "build-server": "npm run dirs -s; npm-run-all --silent --parallel build:* server",
+    "build-sync-server": "npm run dirs -s; npm-run-all --silent --parallel build:* sync server",
+    "dist": "rm -rf dist; mkdir -p dist; npm run zip -s"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.5",
+    "cpx": "^1.5.0",
+    "css-mqpacker": "^5.0.1",
+    "node-sass": "^4.0.0",
+    "npm-run-all": "^3.1.2",
+    "onchange": "^3.2.1",
+    "sass-mq": "^3.3.2",
+    "uglify-js": "^2.7.5",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "ignores": [
+      "assets/js/vendor/**"
+    ],
+    "env": [
+      "browser"
+    ]
+  }
+}

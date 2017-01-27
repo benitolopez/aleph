@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+>>> CLEARINGS
+----------------------------------------------------------------
+*/
+
+.post__content:before,
+.post__content:after,
+.comment__content:before,
+.comment__content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	@include clearfix;
+}
+
+.post__content:after,
+.comment__content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	@include clearfix-after;
+}

@@ -1,0 +1,72 @@
+///*--------------------------------------------------------------
+//>>> SETTINGS
+//----------------------------------------------------------------
+//*/
+
+// Font size
+$global__font__size:   16px;
+
+// Line height
+$global__line__height: 24px;
+$line__height__pre:    24px;
+
+// Font family
+$font__main: 'Open Sans', sans-serif;
+$font__pre:  'Courier 10 Pitch', Courier, monospace;
+$font__code: 'Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', monospace;
+
+
+// Background colors
+$background__color__pre:        #f5f5f5;
+$background__color__code:       #f5f5f5;
+$background__color__screen:     #f1f1f1;
+$background__color__hr:         #cccccc;
+$background__color__ins:        #ffe684;
+$background__color__btn:        #cccccc;
+$background__color__btn__hover: #404040;
+
+// Text colors
+$color__text__main:             #404040;
+$color__text__input:            #666666;
+$color__text__input__focus:     #111111;
+$color__text__btn:              #404040;
+$color__text__btn__hover:       #ffffff;
+$color__text__screen:           #1c7aa4;
+
+// Border & line colors
+$color__default__line:          #cccccc;
+$color__border__input:          #cccccc;
+$color__border__input__focus:   #666666;
+$color__border__abbr:           #666666;
+
+// Spacing variables based on the line height
+$space:     round($global__line__height);
+$space__xs: round(0.25 * $space);
+$space__s:  round(0.5 * $space);
+$space__l:  round(2 * $space);
+$space__xl: round(4 * $space);
+
+// Default border radius
+$radius: 4px;
+
+// Breakpoints
+$mq-breakpoints: (
+    mobile:      320px,
+    mobile_wide: 480px,
+    tablet:      768px,
+    desktop:     992px,
+    wide:        1200px
+);
+
+//  STRUCTURE
+//  max__site__width__mobile ........... The max width of the site on mobile devices
+//                                       (up to the `tablet` breakpoint)
+//  max_site_width ..................... The max width of the site on desktop devices
+//                                       (after the `desktop` breakpoint)
+//  max_content_width .................. The max width of the content area. This is also the
+//                                       max width of the site on medium devices
+//                                       (from the `tablet` breakpoint to the `desktop` breakpoint)
+//                                       Use the same value in `$GLOBALS['content_width']`
+$max__site__width__mobile: 90%;
+$max__site__width:         1170px;
+$max__content__width:      770px;

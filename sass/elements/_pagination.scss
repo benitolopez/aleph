@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+>>> PAGINATION
+----------------------------------------------------------------
+*/
+
+/* Post paginated */
+
+.page-links {
+	clear: both;
+	margin: 0 0 $space;
+}
+
+/* Next/prev post links */
+
+.post-navigation__list {
+	@include clear-list()
+}
+
+/* Archive pagination */
+
+.pagination__list {
+	@include clear-list()
+}
+
+.pagination__item {
+	display: inline-block;
+}
