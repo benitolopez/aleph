@@ -36,9 +36,9 @@ Download `Aleph` from GitHub and rename the folder to something else (like `your
 4. Search for: `Aleph_` and replace with: `Your_Theme_Name_`. This is the prefix used in all class names.
 5. Search for: `aleph-` and replace with: `your-theme-name-`. This is the handle prefix of the theme's scripts.
 
-Then, update the stylesheet header in `style.css` and in `sass/style.scss`.
+Then, update the stylesheet header in `style.css` and in `sass/style.scss`. If you will use Sass to compile your CSS, update only `sass/style.scss`.
 
-Now, you have two possibilities: move your theme folder in `wp-content/themes` as usual or use npm to sync your theme folder with your WordPress installation located in another server or VM. It's up to you. Personally, I have a `wp` folder in my computer with all my theme folders inside. And all of them are uploaded (and synchronized) to my local server trough npm when I make a change. More info in the next section if you're interested.
+Now, you have two possibilities: move your theme folder in `wp-content/themes` as usual or use npm to sync your theme folder with your WordPress installation located in another server or VM. It's up to you. Personally, I have a `wp` folder in my computer with all my theme folders inside. And all of them are uploaded (and synchronized) to my local server through npm when I make a change. More info in the next section if you're interested.
 
 ## Npm usage
 
