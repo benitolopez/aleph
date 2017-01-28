@@ -32,8 +32,8 @@ Download `Aleph` from GitHub and rename the folder to something else (like `your
 
 1. Search for: `'aleph'` (inside single quotations) and replace with: `'your-theme-name'`. This is the text domain.
 2. Search for: `aleph_` and replace with: `your_theme_name_`. This is the prefix used in all function names.
-3. Search for: `Aleph_` and replace with: `Your_Theme_Name_`. This is the prefix used in all class names.
-4. Search for: <code>&nbsp;Aleph</code> (note the space before <code>&nbsp;Aleph</code>) and replace with: <code>&nbsp;Your_Theme_Name</code>. This captures the theme name in DocBlocks.
+3. Search for: <code>&nbsp;Aleph</code> (note the space before <code>&nbsp;Aleph</code>) and replace with: <code>&nbsp;Your_Theme_Name</code>. This captures the theme name in DocBlocks.
+4. Search for: `Aleph_` and replace with: `Your_Theme_Name_`. This is the prefix used in all class names.
 5. Search for: `aleph-` and replace with: `your-theme-name-`. This is the handle prefix of the theme's scripts.
 
 Then, update the stylesheet header in `style.css` and in `sass/style.scss`.
