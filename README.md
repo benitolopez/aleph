@@ -50,7 +50,7 @@ The first thing you need to do is install the npm dependencies. So, with the ter
 npm install postcss-cli wp-pot-cli -g
 ```
 
-To make your life easier, `Aleph` uses a `.npmrc` (not included in this repo) to pass the project configuration values. So, create a `.npmrc` file in the root of your theme folder and adjust the following settings:
+To make your life easier, `Aleph` uses a `.npmrc` file (not included in this repo) to pass the project configuration values. So, create a `.npmrc` file in the root of your theme folder and adjust the following settings:
 
 ```bash
 ALEPH_SLUG='your-theme-name'
