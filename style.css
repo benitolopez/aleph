@@ -5,7 +5,7 @@ Theme URI: https://github.com/benitolopez/aleph
 Author: Benito Lopez
 Author URI: http://lopezb.com/
 Description: Opinionated WordPress starter theme.
-Version: 1.1.0
+Version: 1.0.0
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl.html
 Text Domain: aleph
@@ -63,11 +63,13 @@ SITE
  * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /*--------------------------------------------------------------
@@ -115,7 +117,8 @@ figure {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -255,7 +258,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -274,7 +278,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -528,9 +533,12 @@ input[type="submit"] {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: color, background-color, border-color;
   transition-property: color, background-color, border-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background: #cccccc;
   border-radius: 4px;
   border: none;
@@ -585,9 +593,12 @@ textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: color, background-color, border-color;
   transition-property: color, background-color, border-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #cccccc;
   color: #666666;
   padding: 6px 24px;
@@ -812,7 +823,8 @@ object {
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #1c7aa4;
   display: block;
@@ -1015,68 +1027,68 @@ object {
   max-width: 100%;
 }
 
-@media (min-width: 30em){
-  .wrapper{
+@media (min-width: 30em) {
+  .wrapper {
     padding-left: 0;
     padding-right: 0;
     width: 90%;
   }
 }
 
-@media (min-width: 48em){
-  .wrapper{
+@media (min-width: 48em) {
+  .wrapper {
     max-width: 770px;
   }
 }
 
-@media (min-width: 62em){
-  .wrapper{
+@media (min-width: 62em) {
+  .wrapper {
     max-width: 1170px;
   }
   .site-main--right-sidebar,
-  .site-main--left-sidebar{
+  .site-main--left-sidebar {
     width: 70%;
   }
-  .site-main--no-sidebar{
+  .site-main--no-sidebar {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 770px;
   }
-  .site-main--right-sidebar{
+  .site-main--right-sidebar {
     float: left;
     padding-right: 96px;
   }
-  .site-main--left-sidebar{
+  .site-main--left-sidebar {
     float: right;
     padding-left: 96px;
   }
   .site-sidebar--right-sidebar,
-  .site-sidebar--left-sidebar{
+  .site-sidebar--left-sidebar {
     overflow: hidden;
     width: 30%;
   }
-  .site-sidebar--right-sidebar{
+  .site-sidebar--right-sidebar {
     float: right;
   }
-  .site-sidebar--left-sidebar{
+  .site-sidebar--left-sidebar {
     float: left;
   }
-  .site-sidebar{
+  .site-sidebar {
     border-top: none;
     padding-top: 0;
   }
 }
 
-@media (min-width: 75em){
+@media (min-width: 75em) {
   .site-main--right-sidebar,
-  .site-main--left-sidebar{
+  .site-main--left-sidebar {
     padding-left: 0;
     padding-right: 0;
     width: 770px;
   }
   .site-sidebar--right-sidebar,
-  .site-sidebar--left-sidebar{
+  .site-sidebar--left-sidebar {
     width: 304px;
   }
 }
