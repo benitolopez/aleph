@@ -23,8 +23,6 @@
 Make sure all dependencies have been installed before moving on:
 
 * [Node.js](http://nodejs.org/)
-* [postcss-cli](https://github.com/postcss/postcss-cli)
-* [wp-pot-cli](https://github.com/rasmusbe/wp-pot-cli)
 
 ## Getting started
 
@@ -44,11 +42,7 @@ Now, you have two possibilities: move your theme folder in `wp-content/themes` a
 
 `Aleph` comes with a ready to use `package.json` file that allows you to run and watch some powerful tasks. You can compile your Sass files, minimize your scripts, preview your changes and so on.
 
-The first thing you need to do is install the npm dependencies. So, with the terminal cd into your theme folder and run `npm install`. Remember that you also need [postcss-cli](https://github.com/postcss/postcss-cli) and [wp-pot-cli](https://github.com/rasmusbe/wp-pot-cli) installed globally. More info in the respective project pages but basically, you just need to run this command in your terminal to install them:
-
-```bash
-npm install postcss-cli wp-pot-cli -g
-```
+The first thing you need to do is install the npm dependencies. So, with the terminal cd into your theme folder and run `npm install`.
 
 To make your life easier, `Aleph` uses a `.npmrc` file (not included in this repo) to pass the project configuration values. So, create a `.npmrc` file in the root of your theme folder and adjust the following settings:
 
